@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en>"
+ <head>
+   <meta charser="utf-8">
+   <link rel="stylesheet" href="styles.css">
+   <title>SentraKuliner Gresik</title>
+ </head>
+ <body>
+  <h1 id="title">Form Survei Sentra Kuliner Gresik</h1>
+  <p id="description">Thank you for taking the time to help us for improve our company platform</p>
+  
+  <fieldset>
+  <form id="survey-form">
+    <label id="name-label" for="name">NAMA : <input id="name" type="text" placeholder="Masukkan Nama" required /></label>
+    <label id="email-label" for="email">EMAIL : <input id="email" type="email" placeholder="Masukkan Email" required/></label>
+    <label id="number-label" for="number">UMUR : <input id="number" type="number" placeholder="umur" min="12"
+    max="70" required/></label>
+    
+    <label>apa pekerjaaan mu sekarang? 
+      <select id="dropdown"> 
+       <option value="">Pilih Pekerjaan</option>
+       <option value="1">Pelajar</option>
+       <option value="2">Guru</option>
+       <option value="3">PNS</option>
+       <option value="4">Pegawai</option>
+     </select>
+    </label>
+    
+    <label>Apakah kamu akan merekomendasikan  ke temanmu?</label>
+    <label><input id="iya" type="radio" value="1" name="rekomendasi"/> Iya</label>
+    <label><input id="tidak" type="radio" value="2" name="rekomendasi"/> Tidak</label>
+    <label><input id="mungkin" type="radio" value="3" name="rekomendasi"/> Bisa Jadi</label>
+    
+    <label>Makanan yang perlu ditingkatkan</label>
+    <label><input type="checkbox" value="1"/> Bakso</label>
+    <label><input type="checkbox" value="2"/> Mie</label>
+    <label><input type="checkbox" value="3"/> Nasgor</label>
+    <label><input type="checkbox" value="4"/> Martabak</label>
+
+    <label>Minuman yang perlu ditingkatkan</label>
+    <label><input type="checkbox" value="1"/> Es</label>
+    <label><input type="checkbox" value="2"/> Kopi</label>
+    <label><input type="checkbox" value="3"/> Jus</label>
+
+    <label>Kritik & saran 
+      <textarea cols="30" rows="2" placeholder="ketikkan kritik & saran"></textarea>
+    </label>
+
+    <input id="submit" type="submit"/>
+  </form>
+  </fieldset>
+ </body>
+<html>
